@@ -1,0 +1,7 @@
+My customer waitlist uses a custom singly linked list written in Python. The list is made up of CustomerNode objects. Each node stores a customer's name and a reference to the next customer in the list. The Waitlist class manages these nodes and provides methods to add customers to the front or end, remove a customer, and print the entire waitlist.
+
+The head is an important part of the linked list because it points to the first customer in the waitlist. When a customer is added to the front, the new customer becomes the head and points to the previous first customer. If the first customer is removed, the head is changed to point to the next customer. If the list is empty, the head is None.
+
+Adding a customer to the front is efficient because the program only needs to change the head reference. Adding a customer to the end requires the program to travel through the list until it reaches the last node. Removing a customer also requires searching through the list to find the customer's name.
+
+A real engineer might need a custom list when the standard data structures provided by a programming language do not meet the needs of a specific application. For example, a custom linked list could be useful when an application frequently adds or removes items from certain positions. Building the data structure manually also helps engineers understand and control how data is stored and connected in memory.
